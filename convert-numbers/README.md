@@ -4,7 +4,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ```bash
 import { ConvertNumbers } from './../src/plugin/convert-numbers'
-# or
-yarn dev
+let ConvertNumbers = await ConvertNumbers(100000,'');
+ConvertNumbers // 10K
 ```
-## Learn More
+
+## Option
+
+ConvertNumbers(number,type);
+number = value : type number
+type = th | en
