@@ -22,8 +22,8 @@ export const ConvertNumbers = async (number: number, type: string) => {
         val_number = number.toString().slice(0, -12)
         val_type = (type == 'th' ? 'ล้านล้าน' : 'T')
         res = await `${val_number}${val_type}`
-    } else if (val_length >= 16 && val_length <= 17) {
-        val_number = number.toString().slice(0, -14)
+    } else if (val_length >= 16) {
+        val_number = number.toString().slice(0, -15)
         val_type = (type == 'th' ? 'ล้านล้านล้าน' : 'Q')
         res = await `${val_number}${val_type}`
     }
